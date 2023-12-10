@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bendera Palestina</title>
+  <style type="text/css" media="all">
+    body {
+      margin: 0;
+    }
+    
+    .flag {
+      overflow: hidden;
+      margin: auto;
+      position: relative;
+      background: #FFF;
+      aspect-ratio: 2/1;
+      width: 100%;
+    }
+    
+    div {
+      width: 100%;
+      height: 33%;
+    }
+    
+    .hitam {
+      background: #000;
+    }
+    
+    .hijau {
+      position: absolute;
+      bottom: 0;
+      background: #008000;
+    }
+    
+    .flag::after {
+      content: "";
+      position: absolute;
+      aspect-ratio: 1;
+      height: 71%;
+      left: 0;
+      top: 0;
+      transform-origin: top left;
+      transform: rotate(45deg);
+      background: #F00;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flag">
+    <div class="hitam"></div>
+    <div class="hijau"></div>
+    <div class="merah"></div>
+  </div>
+</body>
+
+</html>
